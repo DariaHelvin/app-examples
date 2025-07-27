@@ -1,0 +1,9 @@
+<resources>
+    <string name="default_web_client_id" translatable="false">YOUR_WEB_CLIENT_ID</string>
+    <string name="firebase_database_url" translatable="false">YOUR_FIREBASE_DATABASE_URL</string>
+    <string name="gcm_defaultSenderId" translatable="false">281780071153</string>
+    <string name="google_api_key" translatable="false">AIzaSyAEoBz995YVWqkBpdTNqZDxc8e5Lnrupdo</string>
+    <string name="google_app_id" translatable="false">1:281780071153:android:24ce21985ba07873969750</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAEoBz995YVWqkBpdTNqZDxc8e5Lnrupdo</string>
+    <string name="project_id" translatable="false">hagenbergapp</string>
+</resources>

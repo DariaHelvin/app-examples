@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home_icon_grey"
+        android:title=""
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_fullcalendar"
+        android:icon="@drawable/calender_icon"
+        android:title=""
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_medicine"
+        android:icon="@drawable/medicine_icon"
+        android:title=""
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_health"
+        android:icon="@drawable/health_icon"
+        android:title=""
+        app:showAsAction="ifRoom"
+        tools:ignore="HardcodedText" />
+</menu>

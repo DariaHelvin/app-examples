@@ -1,0 +1,71 @@
+plugins {
+    id "com.android.application"
+    id 'org.jetbrains.kotlin.android' version '1.9.0'
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+android {
+    namespace "com.example.hgb_app"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.example.hgb_app"
+        minSdkVersion 23
+        targetSdkVersion 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+        // Добавляем флаг для предупреждений об устаревших API
+        tasks.withType(JavaCompile) {
+            options.compilerArgs += ["-Xlint:deprecation"]
+        }
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+        // Добавляем флаг для предупреждений об устаревших API
+        freeCompilerArgs += ["-Xlint:deprecation"]
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+    implementation("com.google.firebase:firebase-auth")
+}

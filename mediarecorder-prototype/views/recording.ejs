@@ -1,0 +1,50 @@
+<div data-page="recording" id="video-container">
+    <video id="main_video" autoplay muted></video>
+    <div class="controls-container">
+        <button id="recordButton" class="record-button">Rekord</button>
+        <button id="newRecordButton" class="button-with-image" style="display: none">
+            <img src="images/reverse-button.png" alt="Reverse" />
+        </button>
+        <button id="approveButton" class="button-with-image" style="display: none">
+            <img src="images/approve-button1.png" alt="Approve" />
+        </button>
+        <button id="editButton" class="button-with-image" style="display: none">
+            <img src="images/edit-button2.png" alt="Edit" />
+        </button>
+    </div>
+</div>
+<div id="additional-fields" style="display: none">
+    <textarea id="comment" placeholder="Zusätzliche Anmerkungen"></textarea>
+    <input type="text" id="email" placeholder="E-mail">
+    <div class="send-button-container">
+        <button id="sendButton">AN DIE EXPERTEN SENDEN</button>
+    </div>
+</div>
+//актуальная версия
+<div data-page="recording" id="video-container">
+    <video id="main_video" autoplay muted playsinline></video>
+    <div class="controls-container">
+        <button id="recordButton" class="record-button">Rekord</button>
+        <button id="newRecordButton" class="button-with-image" style="display: none">
+            <img src="images/reverse-button.png" alt="Reverse" />
+        </button>
+        <button id="approveButton" class="button-with-image" style="display: none">
+            <img src="images/approve-button1.png" alt="Approve" />
+        </button>
+
+    </div>
+</div>
+<div>
+    <img src="<%= predefinedData.image %>" alt="<%= predefinedData.deviceName %>" />
+</div>
+
+<div id="additional-fields" style="display: none">
+    <textarea id="comment" placeholder="Zusätzliche Anmerkungen"></textarea>
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="number" placeholder="Telefonnummer">
+    <input type="text" id="email" placeholder="E-mail">
+
+    <div class="send-button-container">
+        <button id="sendButton">ANFRAGE ABSENDEN</button>
+    </div>
+</div>

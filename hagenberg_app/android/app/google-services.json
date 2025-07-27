@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "281780071153",
+    "firebase_url": "https://hagenbergapp-default-rtdb.firebaseio.com",
+    "project_id": "hagenbergapp",
+    "storage_bucket": "hagenbergapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281780071153:android:24ce21985ba07873969750",
+        "android_client_info": {
+          "package_name": "com.example.hgb_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEoBz995YVWqkBpdTNqZDxc8e5Lnrupdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
